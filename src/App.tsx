@@ -1,8 +1,8 @@
 import './App.css'
 // import QrCodeCard from './components/qr-code-card'
-import BlogPreviewCard, { BlogPreviewCardProps } from './components/blog-preview-card'
-
-const cards: BlogPreviewCardProps[] = [
+// import BlogPreviewCard, { BlogPreviewCardProps } from './components/blog-preview-card'
+import SocialLinksProfile from './components/social-links-profile'
+/* const cards: BlogPreviewCardProps[] = [
   {
     imageSrc: "/02-blog-preview-card/illustration-article.svg",
     categories: ["Learning"],
@@ -14,12 +14,12 @@ const cards: BlogPreviewCardProps[] = [
       imageSrc: "/02-blog-preview-card/image-avatar.webp",
     }
   }
-]
+] */
 
 function App() {
   return (
     <>
-      <div className="flex flex-col items-center w-full h-screen gap-5 p-4 m-0 bg-slate-300">
+      <div className="flex flex-col items-center w-full h-screen gap-5 p-4 m-0 bg-gray-900">
         {/* <QrCodeCard
           compact
           imageSrc="/01-qr-code/image-qr-code.png"
@@ -39,14 +39,17 @@ function App() {
           title="Improve your front-end skills by building projects"
           description="Scan the QR code to visit Front-End Mentor and take your coding skills to the next level"
         /> */}
-        <BlogPreviewCard
+
+        {/*         <BlogPreviewCard
           imageSrc={cards[0].imageSrc}
           categories={cards[0].categories}
           publishedAt={cards[0].publishedAt}
           title={cards[0].title}
           description={cards[0].description}
           author={cards[0].author}
-        />
+        /> */}
+        <SocialLinksProfile />
+
 
       </div>
     </>
